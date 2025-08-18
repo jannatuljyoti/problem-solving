@@ -1,15 +1,17 @@
 // Problem 10: PingPong Challenge
 function pingPong(){
+    let result =[];
     for(let i = 1; i <= 20; i++){
         if(i % 3 === 0 && i % 5 === 0){
-            console.log("PingPong");
+          result.push("PingPong");
         }else if (i % 3 === 0){
-            console.log("Ping");
+            result.push("Ping");
         }else if (i % 5 === 0){
-            console.log("Pong");
+            result.push("Pong");
         }else{
-            console.log(i);
+            result.push(i);
         }
     }
+    console.log(result.join(","));
 }
-console.log(pingPong());
+pingPong();
